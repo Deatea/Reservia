@@ -6,6 +6,10 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+p{
+	margin-top: 3px;
+	font-size: 16px;
+}
 a{
 text-decoration: none;
 color: #0065FC;
@@ -94,9 +98,10 @@ h1{
 
 .box{
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	margin-top: 40px;
+	margin-left: 18%;
 	width: 500px;
+	height: 50px;
 	transform: translate(-50%,-50%);
 }
 
@@ -104,16 +109,16 @@ input{
 	position: relative;
 	display: inline-block;
 	font-size: 20px;
+	border: 1px solid grey;
 	box-sizing: border-box;
 }
 
 input[type="text"]{
 	width: 250px;
 	height: 50px;
-	border: solid;
 	outline: none;
 	padding: 0 25px;
-	border-radius: 0 0 0 0;
+	border-radius: 20px 0 0 20px;
 	border-color: #D9D9D9;
 }
 
@@ -132,4 +137,9 @@ input[type=submit]{
 input[type="submit"]:hover{
 	transition: .5s;
 	background: #0064EC;
+}
+
+.filter{
+	margin-top: 110px;
+	margin-left: 5%;
 }
