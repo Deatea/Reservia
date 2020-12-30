@@ -258,3 +258,11 @@ input[type="submit"]:hover {
 .cannebière p {
 	font-size: 12px;
 }
+
+footer {
+	flex-shrink: 0;
+	border-top: 1px dashed #000;
+	width: 100%;
+	background: #f1f1f1;
+	color: #333;
+}
