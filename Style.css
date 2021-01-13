@@ -416,6 +416,101 @@ form input:nth-child(3) {
 		grid-template-rows: auto repeat(3, 9rem);
 	}
 }
+
+.activity {
+	display: grid;
+	column-gap: 2rem;
+	margin: 4rem 0;
+}
+
+.activity_title {
+	grid-column: 1/-1;
+}
+
+.activity_card {
+	box-shadow: 0 0 20px black;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	transition-duration: 0.1s;
+}
+
+.activity_card:hover {
+	transform: scale(1.01)
+}
+
+.activity_card_img{
+	position: relative;
+	flex: 1;
+}
+
+.activity_img{
+	position: absolute;
+	height: 100%;
+	weight: 100%;
+	object-fit: cover;
+}
+
+.activity_card_title{
+	margin: 1.2rem 1.5rem;
+}
+
+@media (min-width: 1100px) {
+	.activity {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+	}
+
+	.activity_card1 {
+		grid-row: 2/7;
+		grid-column: 1/2;
+	}
+	.activity_card2 {
+		grid-row: 2/3;
+		grid-column: 2/5;
+	}
+	.activity_card3 {
+		grid-row: 3/4;
+		grid-column: 2/7;
+	}
+	.activity_card4 {
+		grid-row: 4/5;
+		grid-column: 2/3;
+	}
+	.activity_card5 {
+		grid-row: 2/3;
+		grid-column: 6/7;
+	}
+	.activity_card6 {
+		grid-row: 4/5;
+		grid-column: 4/7;
+	}
+}
+
+@media (max-width: 1100px) {
+	.activity {
+		row-gap: 2rem;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+	}
+}
+
+@media (max-width: 925px) {
+	.activity {
+	 	row-gap: 2rem;
+	 	grid-template-columns: repeat(2, 1fr);
+	 	grid-template-rows: auto 12rem 12rem 12rem;
+	}
+}
+
+  @media (max-width: 650px) {
+	.activity {
+		row-gap: 2rem;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+	}
+}
 .footer {
   background-color: #F2F2F2;
   width: 100%;
