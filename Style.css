@@ -427,7 +427,7 @@ form input:nth-child(3) {
 .activity {
 	display: grid;
 	column-gap: 2rem;
-	margin: 4rem 0;
+	margin: 64px 0;
 }
 
 .activity_title {
@@ -435,8 +435,8 @@ form input:nth-child(3) {
 }
 
 .activity_card {
-	box-shadow: 0 0 20px black;
-	border-radius: 1rem;
+	box-shadow: 0 0 16px #0000002e;
+	border-radius: 16px;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -444,7 +444,8 @@ form input:nth-child(3) {
 }
 
 .activity_card:hover {
-	transform: scale(1.01)
+	transform: scale(1.02);
+	box-shadow: 0 0 12px #0000002e;
 }
 
 .activity_card_img{
