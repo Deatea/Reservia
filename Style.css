@@ -417,6 +417,13 @@ form input:nth-child(3) {
 	}
 }
 
+
+@media (max-width: 672px) {
+	.popular {
+		grid-template-columns: 1fr;
+	}
+}
+
 .activity {
 	display: grid;
 	column-gap: 2rem;
