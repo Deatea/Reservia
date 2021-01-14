@@ -175,11 +175,22 @@ form input:nth-child(3) {
   cursor: pointer;
 }
 
+.searching {
+	font-weight: bold;
+}
+
+@media (max-width: 650px) {
+	.searching {
+		display: none;
+	}
+}
+
 .move__left {
 	margin: -4px;
 }
 
 .Filter {
+	padding: 0 16px;
 	display: flex;
 	margin-top: 100px;
 	flex-wrap: wrap;
@@ -231,6 +242,10 @@ form input:nth-child(3) {
 	margin: 0 16px;
 }
 
+.FilterIconTitle {
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .Info {
 	display: flex;
 	align-items: center;
@@ -545,4 +560,15 @@ form input:nth-child(3) {
 
 .footerColumnwrapperColumnLink:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+	.footerColumnwrapperColumnTitle {
+		font-size: 12px;
+	}
+
+	.footerColumnwrapperColumnLink {
+		font-size: 8px;
+		padding-left: 18px;
+	}
 }
