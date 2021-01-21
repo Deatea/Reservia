@@ -62,6 +62,7 @@ a {
 }
 
 .inner-header {
+	max-width: 1340px;
 	width: 90%;
 	height: 100%;
 	display: block;
@@ -344,6 +345,13 @@ form input:nth-child(3) {
 	font-size: 18px;
 }
 
+.hosting_background {
+	background-color: #f2f2f2;
+  	border-radius: 30px;
+  	padding: 49px 41px;
+  	min-width: 410px;
+}
+
 .popular {
 	display: grid;
 	row-gap: 32px;
@@ -389,6 +397,12 @@ form input:nth-child(3) {
 	flex: 1;
 }
 
+.popular_background {
+	background-color: #f2f2f2;
+  	border-radius: 30px;
+  	padding: 49px 41px;
+  	min-width: 410px;
+}
 @media (max-width: 1440px) {
 	.host {
 		grid-template-columns: 1fr;
