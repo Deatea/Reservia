@@ -477,7 +477,8 @@ form input:nth-child(3) {
     border-top-right-radius: 15px;
     height: 140px;
     object-fit: cover;
-    overflow: hidden;
+	overflow: hidden;
+	width: 100%;
 }
 
 .activity .activity_card_1,
