@@ -53,6 +53,7 @@ a {
 .header_link:hover {
 	color: #0065FC;
 }
+
 .signup {
 	display: flex;
 	align-items: center;
@@ -145,7 +146,8 @@ a {
 .search_text {
     display: none;
 }
-.fa-search {
+.search .fa-search {
+	display: none;
     background-color: #0065FC;
     border-radius: 15px;
     color: white;
@@ -155,9 +157,6 @@ a {
 }
 
 @media screen and (min-width: 980px) {
-    .search_icon {
-		display: none;
-    }
     .search_text {
         background-color: #0065FC;
         border-radius: 0px 15px 15px 0;
@@ -168,6 +167,21 @@ a {
     }
 }
 
+@media screen and (max-width: 980px) {
+	.search .fa-search {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.search {
+	height: 50px;
+	justify-content: space-between;
+	margin: 30px 5px;
+	max-width: 400px;
+	min-width: 100px;
+	}
+}
 .move__left {
 	margin: -4px;
 }
@@ -389,6 +403,27 @@ a {
 	}
 }
 
+@media screen and (max-width: 375px) {
+	.hosting_background {
+		background: none;
+		padding: 0px 20px;
+		min-width: 280px;
+	}
+	.hostingArt {
+		width: 100%;
+	}
+	.host {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	.hostingHeaderTitle {
+		font-size: 20px;
+	}
+	.header {
+		max-width: 280px;
+	}
+}
 @media (max-width: 1000px) {
 	.mostPopular {
 		grid-template-columns: 1fr;
@@ -400,6 +435,22 @@ a {
 @media (max-width: 672px) {
 	.popular {
 		grid-template-columns: 1fr;
+	}
+}
+@media screen and (max-width: 375px) {
+	.popular {
+		margin: 0 !important;
+	}
+	.popular_background {
+		border-radius: 0 0 0 0;
+		padding: 41px 10px;
+		min-width: 280px;
+	}
+	.mostPopular {
+		font-size: 20px;
+	}
+	.main {
+		padding: 0 0;
 	}
 }
 .activity {
@@ -518,7 +569,11 @@ a {
         height: 80%;
     }
 }
-
+ @media screen and (max-width: 400px) {
+	 .activity_card_title {
+		 font-size: 14px;
+	 }
+ }
 .footer {
   background-color: #F2F2F2;
   width: 100%;
